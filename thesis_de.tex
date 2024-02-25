@@ -1,0 +1,51 @@
+\documentclass[reqno, fleqn, paper=a4, fontsize=12pt, DIV=11, BCOR=10mm, twoside, titlepage, open=right, bibliography=totoc, numbers=noendperiod, captions=tableheading, headings=normal, parskip]{scrbook} %{scrreprt}
+%\documentclass[reqno, fleqn, paper=a4, fontsize=12pt, DIV=11, BCOR=0mm, twoside=semi, titlepage, open=right, bibliography=totoc, numbers=noendperiod, captions=tableheading, headings=normal, parskip]{scrbook} %{scrreprt}
+\usepackage{99_style/style_de}
+%\usepackage{99_style/styleMarkus}
+\color{black}
+\usepackage{lmodern}
+\usepackage[framemethod=tikz]{mdframed}
+\newmdtheoremenv[
+hidealllines=true,
+leftline=true,
+innertopmargin=0pt,
+innerbottommargin=0pt,
+linewidth=7pt,
+linecolor=blue!90,
+innerrightmargin=0pt,
+]{Def}{Definition}[chapter]
+
+\graphicspath{{97_graphics/}}
+\newcommand*{\GraphicPath}{./97_graphics}%
+
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{verbatim}
+\newcolumntype{K}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{document}
+\pagenumbering{roman}
+	\input{00_intro/titlepage_de}
+	\input{01_texfiles/Kapitel_Abstract}
+	\tableofcontents{}
+	\listoffigures {}
+	\listoftables {}
+\cleardoublepage	
+\pagenumbering{arabic}
+	\pagestyle{headings}
+			\input{01_texfiles/Kapitel_Einleitung}
+			\input{01_texfiles/Kapitel_Umfeld}
+			\input{01_texfiles/Kapitel_Grundlagen}
+			\input{01_texfiles/Kapitel_Sota}
+			\input{01_texfiles/Kapitel_Konzept}
+			\input{01_texfiles/Kapitel_Realisierung}
+			\input{01_texfiles/Kapitel_Evaluation}
+			%\input{03_texfiles/Kapitel_Projektmanagement}
+			\input{01_texfiles/Kapitel_Zusammenfassung}
+\printbibliography
+
+\end{document}

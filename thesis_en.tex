@@ -1,0 +1,54 @@
+\documentclass[reqno, fleqn, paper=a4, fontsize=12pt, DIV=11, BCOR=10mm, oneside, titlepage, open=right, bibliography=totoc, numbers=noendperiod, captions=tableheading, headings=normal, parskip]{scrbook} %{scrreprt}
+%\documentclass[reqno, fleqn, paper=a4, fontsize=12pt, DIV=11, BCOR=0mm, twoside=semi, titlepage, open=right, bibliography=totoc, numbers=noendperiod, captions=tableheading, headings=normal, parskip]{scrbook} %{scrreprt}
+\usepackage{99_style/style_en}
+% \usepackage{svg}
+%\usepackage{99_style/styleMarkus}
+\color{black}
+\usepackage{lmodern}
+
+\graphicspath{{97_graphics/}}
+\newcommand*{\GraphicPath}{./97_graphics}%
+
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{verbatim}
+
+\usepackage[acronym,nomain,nopostdot]{glossaries}
+
+\newcolumntype{K}[1]{>{\centering\arraybackslash}m{#1}}
+% \newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+% \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash\hspace{0pt}\centering}p{#1}}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\makeglossaries
+% \makenoidxglossaries
+\input{00_intro/glossary}
+
+\begin{document}
+\pagenumbering{roman}
+	\input{00_intro/titlepage_en}
+	\input{01_texfiles/Kapitel_Abstract}
+	\tableofcontents{}
+    % \printglossary[type=\acronymtype]
+    
+	\listoffigures {}
+	\listoftables {}
+    \printglossary[type=\acronymtype,title={List of Acronyms},nonumberlist]
+\cleardoublepage	
+\pagenumbering{arabic}
+	\pagestyle{headings}
+			\input{01_texfiles/Kapitel_Einleitung} % Introduction
+			% \input{01_texfiles/Kapitel_Umfeld}
+			\input{01_texfiles/Kapitel_Grundlagen} % Related work
+			% \input{01_texfiles/Kapitel_Sota}
+			\input{01_texfiles/Kapitel_Konzept} % Concepts
+			\input{01_texfiles/Kapitel_Realisierung} % Results
+			\input{01_texfiles/Kapitel_Evaluation} % Evaluation
+			% %\input{03_texfiles/Kapitel_Projektmanagement} 
+			\input{01_texfiles/Kapitel_Zusammenfassung} % Conclusion
+\printbibliography
+
+\end{document}
