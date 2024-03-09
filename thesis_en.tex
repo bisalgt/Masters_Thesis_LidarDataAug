@@ -31,9 +31,7 @@
 \pagenumbering{roman}
 	\input{00_intro/titlepage_en}
 	\input{01_texfiles/Kapitel_Abstract}
-	\tableofcontents{}
-    % \printglossary[type=\acronymtype]
-    
+	\tableofcontents{}    
 	\listoffigures {}
 	\listoftables {}
     \printglossary[type=\acronymtype,title={List of Acronyms},nonumberlist]
@@ -42,8 +40,8 @@
 	\pagestyle{headings}
 			\input{01_texfiles/Kapitel_Einleitung} % Introduction
 			% \input{01_texfiles/Kapitel_Umfeld}
-			\input{01_texfiles/Kapitel_Grundlagen} % Related work
-			% \input{01_texfiles/Kapitel_Sota}
+			\input{01_texfiles/Kapitel_Grundlagen} % Basics
+			\input{01_texfiles/Kapitel_Sota} % Related Work
 			\input{01_texfiles/Kapitel_Konzept} % Concepts
 			\input{01_texfiles/Kapitel_Realisierung} % Results
 			\input{01_texfiles/Kapitel_Evaluation} % Evaluation

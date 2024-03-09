@@ -1,4 +1,4 @@
-\chapter{Related Work}
+\chapter{Basics}
 
 \section{Lidar}
 Lidar refers to Light detection and ranging (Laser imaging, detection and ranging). It can measure an object's range, angle, material reflectance, and, in certain situations, radial velocity in relation to the sensor. Numerous fields, including oceanography, meteorology, security, augmented and virtual reality, mapping, and autonomy, employ it.
@@ -15,8 +15,8 @@ Laser is an electromagnetic radiation similar to that of radio frequency waves. 
 \end{equation}
 For Speed of light(Approx.) = \(3 * 10^8 m/s^2\) and TOF = \(10 ns = 10 * 10^{-9} second\). We can use equation \ref{eq:laser} to find the distance between the laser source and the target point. Using the formula we get, the distance between the laser source and target = 0.15 meters. So it means that the distance between the laser source and the target hit point is 0.15 meters. By using the orientation of the lidar sensor, the exact position of the hit point is calculated. For example, if the lidar sensor was oriented along the x-axis, then the coordinate of the hit point would be \((x, y, z) = (0.15, 0, 0)\). Finding each point from the environment gives a point cloud representation of the environment. Data from lidar sensors are stored in the form of binaries. The point cloud from the lidar can also be represented in formats such as LAS/ LAZ, PLY, ASCII, BIN, text, etc.
 
-\section{Testing in HAD Vehicle}
-Since autonomous driving systems are getting more complicated, they need to be thoroughly tested before being made available to the public. Ensuring the safety of autonomous driving systems in crucial circumstances is an uphill battle. Throughout the whole phases of development, including functional engineering and testing, integration of systems and validation, test drive and validation, etc., a comprehensive profile for testing of autonomous vehicle procedures is critically needed. Figure \ref{fig:related_work-ad_testing} shows pipelines in autonomous driving development and testing.
+\section{Testing Highly Autonomous Driving Systems}
+Since autonomous driving systems are getting more complicated, they need to be thoroughly tested before being made available to the public. Safeguarding the passengers' safety within an autonomous driving system presents a formidable challenge. Throughout the whole phases of development, including functional engineering and testing, integration of systems and validation, test drive and validation, etc., a comprehensive profile for testing of autonomous vehicle procedures is critically needed. Figure \ref{fig:related_work-ad_testing} shows pipelines in autonomous driving development and testing.
 
 \begin{figure}[htbp]
     \centering
@@ -47,7 +47,7 @@ It is an extensive dataset based on laser technology to advance semantic segment
     \label{fig:related_work-ratio_with_total_points_kitti}
 \end{figure}
 
-Figure \ref{fig:related_work-ratio_with_total_points_kitti} shows variants of classes in comparison with total labeled classes available in the SemanticKITTI dataset \parencite{behley2019semantickitti, sem_kitti_total_points_ratio}. From the figure, it can be visualized that vegetation is the most labeled class, after that are roads, sidewalks, buildings, fences, etc. The dataset contains scenes with either a higher density of vegetation or scenes of downtowns, as shown in the figure. For an AD system, any situation can occur when navigating in an environment such as across a river, along a mountain trail, through a desert, alongside an under-construction region, or through a huge mass of people due to demonstration, etc. Such scenarios datasets are not made available in the SemanticKITTI dataset as the data was collected in a controlled setting in Karlsruhe, Germany. This presents a gap in the dataset to represent scenarios to a maximum extent and hence only represent the real world in fragments. Also since the performance of lidar is also affected by environmental factors \parencite{park2023automotive}, the dataset is not enough to represent the real world to a maximum extent in the AD context.
+Figure \ref{fig:related_work-ratio_with_total_points_kitti} shows variants of classes in comparison with total labeled classes available in the SemanticKITTI dataset \parencite{behley2019semantickitti, sem_kitti_total_points_ratio}. From the figure, it can be visualized that vegetation is the most labeled class, after that are roads, sidewalks, buildings, fences, etc. The number of labeled points for classes like person, car, trucks, etc is relatively low in comparison with classes like road, building, fence, vegetation, terrain, etc. The dataset contains scenes with either a higher density of vegetation or scenes of downtowns, as shown in the figure. For a HAD system, any situation can occur when navigating in an environment such as across a river, along a mountain trail, through a desert, alongside an under-construction region, or through a huge mass of people due to demonstration, etc. Such scenarios datasets are not made available in the SemanticKITTI dataset as the data was collected in a controlled setting in Karlsruhe, Germany. This presents a gap in the dataset to represent scenarios to a maximum extent and hence only represent the real world in fragments. Also since the performance of lidar is also affected by environmental factors \parencite{park2023automotive}, the dataset is not enough to represent the real world to a maximum extent in the HAD context.
 
 \begin{figure}[htb]
     \centering
@@ -56,7 +56,7 @@ Figure \ref{fig:related_work-ratio_with_total_points_kitti} shows variants of cl
     \label{fig:related_work-downtown_and_vegetation_sv}
 \end{figure}
 
-From a randomly selected 100 lidar sequences from the SemanticKITTI dataset, point clouds for downtown were calculated by accumulating points for buildings, fences, vehicles, parking, etc, unlabeled points, outliers, roads, vegetation, trunks, terrain, other-objects points were not taken to be the points for downtown for the calculation in figure \ref{fig:related_work-downtown_and_vegetation_sv}. For the point clouds of vegetation; vegetation, trunk, and terrain point clouds were combined. Using hybrid search in open3d \parencite{open3d} with a sphere of radius 30 cm and maximum nearest neighbor of 6 for nearest neighbor search, surface variation was calculated using the equation \ref{eq:surf_var}. The average was taken after dividing the sum of the surface variation of each point by the total number of points for a scene for either downtown or vegetation separately. Figure \ref{fig:related_work-downtown_and_vegetation_sv} shows the distribution of geometric features of the dataset for each scene. The red lines represent downtown and the green lines represent vegetation. It can be analyzed that the dataset is not evenly distributed when comparing the geometric features. The available SOTA dataset does not represent diverse scenes and it is risky, expensive, and not usually reproducible to physically test AD vehicles on public roads. Thus, rather than doing real-world testing, simulations and other methods are opted for the initial testing phase.
+From a randomly selected 100 lidar sequences from the SemanticKITTI dataset, point clouds for downtown were calculated by accumulating points for buildings, fences, vehicles, parking, etc, unlabeled points, outliers, roads, vegetation, trunks, terrain, other-objects points were not taken to be the points for downtown for the calculation in figure \ref{fig:related_work-downtown_and_vegetation_sv}. For the point clouds of vegetation; vegetation, trunk, and terrain point clouds were combined. Using hybrid search in open3d \parencite{open3d} with a sphere of radius 30 cm and maximum nearest neighbor of 6 for nearest neighbor search, surface variation was calculated using the equation \ref{eq:surf_var}. The average was taken after dividing the sum of the surface variation of each point by the total number of points for a scene for either downtown or vegetation separately. Figure \ref{fig:related_work-downtown_and_vegetation_sv} shows the distribution of geometric features of the dataset for each scene. The red lines represent downtown and the green lines represent vegetation. It can be analyzed that the dataset is not evenly distributed when comparing the geometric features. The available SOTA dataset does not represent diverse scenes and it is risky, expensive, and not usually reproducible to physically test HAD vehicles on public roads. Thus, rather than doing real-world testing, simulations and other methods are opted for the initial testing phase.
 
 
 
@@ -70,7 +70,7 @@ Collection of large annotated datasets like SemanticKITTI requires extensive lab
     \label{fig:related_work-real_vs_simulation}
 \end{figure}
 
-Data captured on a series of Indy Autonomous Challenge 2021 \parencite{sauerbeck_learn_Year} shows the difference between the real and lidar simulations. The assumptions that underpin virtual sensor models do not always stand valid in practical situations. Content and Appearance gap between the synthetic and real-world is also discussed in \parencite{care_real_and_syn_gap}. For high accuracy, we need simulation with a low domain gap concerning the real world. It is difficult to model HAD simulators involving lidar because of the following reasons \parencite{zero_domain_gap}. 
+Data captured on a series of Indy Autonomous Challenge 2021 \parencite{sauerbeck_learn_Year} shows the difference between the real environment and synthetic simulation. The assumptions that underpin virtual sensor models do not always stand valid in practical situations. Content and Appearance gap between the synthetic and real-world is also discussed in \parencite{care_real_and_syn_gap}. For high accuracy, we need simulation with a low domain gap concerning the real world. It is difficult to model HAD simulators involving lidar because of the following reasons \parencite{zero_domain_gap}. 
 \begin{itemize}
     \item Unreturned pulses because of pulse's power decay
     \item Multiple echoes from the environment resulting in multiple peaks in the returning signal
@@ -221,7 +221,7 @@ A basic issue in mathematics and computer science, especially in the areas of co
     \begin{minipage}[b]{0.45\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{97_graphics/related_work/kdtree_cube.pdf}
-    \caption{3D KD Tree, source wikipedia}
+    \caption{3D KD Tree \parencite{3d_kd_tree}}
     \label{fig:related_work-kdtree}
     \end{minipage}
     \hfill
@@ -363,7 +363,7 @@ As shown in equation \ref{eq:surf_var}, surface variation, also known as surface
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.6\linewidth]{97_graphics/related_work/surf_variation_with_description.pdf}
-    \caption{Visualization of Surface Variation, referenced from figure 3 of \parencite{pauly2002efficient}}
+    \caption{Visualization of Surface Variation, referenced from \parencite{pauly2002efficient}}
     \label{fig:related_work-surface_variation_visualize}
 \end{figure}
 
@@ -416,7 +416,7 @@ By solving a regularized optimization problem, the Poisson surface regeneration 
 
 A model's indicator function and the oriented points that are collected from its surface are inextricably linked. In particular, the gradient of the indicator function is a vector field that is equal to the inward surface normal nearly throughout (because the indicator function remains unchanged in almost every place), except in places that are near the surface. Consequently, the directed point samples can be considered instances of the model's indicator function gradient. Additionally, the indication function can be seen along the plane shown in the figure \ref{fig:related_work-poiss_rec_1} rightmost image and can be viewed by the middle image of the same figure in black color. Triangle meshes are constructed even in low-point density locations and also infer the surface in such locations. The density value of each point indicates if the neighborhood of the point is crowded by other points. Maximum tree depth for the octree defines the resolution of the final reconstructed triangle meshes.
 
-\section{HPR Algorithm}
+\section{Hidden Point Removal Algorithm}
 The "Hidden" Point Removal operator \parencite{katz2007}is used to identify the points in a point cloud that are observable when perceived from a specific angle. Even in the absence of recreating a surface or measuring normals, visibility is ascertained.  This operator can be used on point clouds of different sizes, on sparse and thick point clouds, and on views both inside and outside the cloud. This algorithm is helpful for shadow casting, view-dependent reconstruction, and point cloud visualization. No point is genuinely hidden since points cannot obscure each other (unless they happen to fall along the exact same beam from the viewer). It is possible to identify which points are visible once a surface has been rebuilt from the points. This suggests that the cloud of points has information inherent to it that can be used to extract the point's visibility. Using the intrinsic information of points in the point cloud, the visibility of the points is determined without the need for surface reconstruction. For a point cloud with n number of points, the time complexity of the algorithm is \(O(n\log(n))\) \parencite{katz2007}.
 
 For a point cloud with a "P" number of points, to find the points that are visible from a given viewpoint "C", the \acrshort{hpr} operator can be used. This HPR operator consists of two main steps as shown in figure \ref{fig:realted_work-hpr}. First is Spherical Flipping and second is the creation of a convex hull. 
@@ -487,8 +487,8 @@ The confusion matrix is the foundation of quality assessment matrices. It is a t
 
 Let's discuss the concept of performance metrics with an example. Consider a HAD system that needs to detect between a person and not a person. Out of 100 observations, 97 observations do not contain a person, and the remaining 3 observations contain a person. If predicting a person is a positive class and predicting a non-person is a negative class, then the metrics can be evaluated. If the HAD system predicted all the 100 observations as non-person then we have \(TP = 0\), \(TN = 97\), \(FP = 0\), and \(FN = 3\). We get an \(Accuracy = 97\%\). Because the dataset is unbalanced, as the number of positive and negative classes is not comparable, considering Accuracy as the determining factor is misleading. So options like F1-Score, Precision, and Recall should be further analysed.
 
-\subsection{Intersection Over Union}
-\acrfull{iou}, also known as the Jaccard Index, is used to compare how similar two irregular shapes are to one another. It is a performance metric that is used to assess how well object detection algorithms perform, especially when it comes to computer vision and machine learning applications. By assessing the regions of overlap between the anticipated and ground truth bounding boxes, an object detection algorithm's accuracy can be determined. It can be calculated using the equation \ref{eq:iou}. IOU is also utilized in \acrfull{nms}. It is a post-processing method for object detection that helps to choose the most pertinent detected items by removing duplicate detections. A predicted bounding box with a higher IoU has maximum confidence in detecting the object and based on thresholding the IoU value, suitable predictions are finalized.
+\subsection{Intersection over Union}
+\acrfull{iou}, also known as the Jaccard Index, is used to compare how similar two irregular shapes are to one another. It is a performance metric that is used to assess how well object detection algorithms perform, especially when it comes to computer vision and machine learning applications. By assessing the regions of overlap between the anticipated and ground truth bounding boxes, an object detection algorithm's accuracy can be determined. It can be calculated using the equation \ref{eq:iou}. IoU is also utilized in \acrfull{nms}. It is a post-processing method for object detection that helps to choose the most pertinent detected items by removing duplicate detections. A predicted bounding box with a higher IoU has maximum confidence in detecting the object and based on thresholding the IoU value, suitable predictions are finalized.
 
 \begin{equation}\label{eq:iou}
     IoU = \frac{\text{Region of Intersection}}{\text{Region of Union}}
@@ -497,7 +497,7 @@ Let's discuss the concept of performance metrics with an example. Consider a HAD
 \begin{figure}[htb]
     \centering
     \includegraphics[width=1\linewidth]{97_graphics//related_work/iou.pdf}
-    \caption{Intersection Over Union}
+    \caption{Intersection over Union}
     \label{fig:related_work-iou}
 \end{figure}
 

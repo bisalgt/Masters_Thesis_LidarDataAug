@@ -4,7 +4,701 @@
 
 % source 1 : https://www.khoury.northeastern.edu/home/rplatt/cs5335_fall2016/slides/point_clouds.pdf
 % source for eigen value and vectors , covariance matrix : https://www.graphics.rwth-aachen.de/media/papers/p_Pau021.pdf
-% eigen values table 1 source todo : https://www.isprs.org/proceedings/XXXVIII/1_4_7-W5/paper/Jutzi-199.pdf
+% eigenvalues table 1 source todo : https://www.isprs.org/proceedings/XXXVIII/1_4_7-W5/paper/Jutzi-199.pdf
+
+@article{domain_adp_appr_2020,
+  author       = {Li Yi and
+                  Boqing Gong and
+                  Thomas A. Funkhouser},
+  title        = {Complete {\&} Label: {A} Domain Adaptation Approach to Semantic
+                  Segmentation of LiDAR Point Clouds},
+  journal      = {CoRR},
+  volume       = {abs/2007.08488},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2007.08488},
+  eprinttype    = {arXiv},
+  eprint       = {2007.08488},
+  timestamp    = {Wed, 22 Jul 2020 12:09:15 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2007-08488.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{survery_domain_adp_2021,
+  author       = {Larissa T. Triess and
+                  Mariella Dreissig and
+                  Christoph B. Rist and
+                  J. Marius Z{\"{o}}llner},
+  title        = {A Survey on Deep Domain Adaptation for LiDAR Perception},
+  journal      = {CoRR},
+  volume       = {abs/2106.02377},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2106.02377},
+  eprinttype    = {arXiv},
+  eprint       = {2106.02377},
+  timestamp    = {Sat, 09 Apr 2022 12:27:11 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-02377.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@INPROCEEDINGS{10204248,
+  author={Ryu, Kwonyoung and Hwang, Soonmin and Park, Jaesik},
+  booktitle={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Instant Domain Augmentation for LiDAR Semantic Segmentation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={9350-9360},
+  keywords={Training;Laser radar;Three-dimensional displays;Semantic segmentation;Semantics;Transforms;Sensors;Autonomous driving},
+  doi={10.1109/CVPR52729.2023.00902}}
+
+
+@misc{lee2022resolving,
+      title={Resolving Class Imbalance for LiDAR-based Object Detector by Dynamic Weight Average and Contextual Ground Truth Sampling}, 
+      author={Daeun Lee and Jongwon Park and Jinkyu Kim},
+      year={2022},
+      eprint={2210.03331},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{sebek2022real3daug,
+      title={Real3D-Aug: Point Cloud Augmentation by Placing Real Objects with Occlusion Handling for 3D Detection and Segmentation}, 
+      author={Petr Šebek and Šimon Pokorný and Patrik Vacek and Tomáš Svoboda},
+      year={2022},
+      eprint={2206.07634},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@article{pointwolf_2021,
+  author       = {Sihyeon Kim and
+                  Sanghyeok Lee and
+                  Dasol Hwang and
+                  Jaewon Lee and
+                  Seong Jae Hwang and
+                  Hyunwoo J. Kim},
+  title        = {Point Cloud Augmentation with Weighted Local Transformations},
+  journal      = {CoRR},
+  volume       = {abs/2110.05379},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2110.05379},
+  eprinttype    = {arXiv},
+  eprint       = {2110.05379},
+  timestamp    = {Thu, 21 Oct 2021 16:20:08 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2110-05379.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@INPROCEEDINGS{9811816,
+  author={Ren, Yuan and Zhao, Siyan and Bingbing, Liu},
+  booktitle={2022 International Conference on Robotics and Automation (ICRA)}, 
+  title={Object Insertion Based Data Augmentation for Semantic Segmentation}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={359-365},
+  keywords={Point cloud compression;Training;Solid modeling;Laser radar;Semantics;Neural networks;Training data},
+  doi={10.1109/ICRA46639.2022.9811816}}
+
+
+@misc{xu2022reality,
+      title={Back to Reality: Weakly-supervised 3D Object Detection with Shape-guided Label Enhancement}, 
+      author={Xiuwei Xu and Yifan Wang and Yu Zheng and Yongming Rao and Jie Zhou and Jiwen Lu},
+      year={2022},
+      eprint={2203.05238},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@inproceedings{rangenetplus2019,
+author = {Milioto, Andres and Vizzo, Ignacio and Behley, Jens and Stachniss, Cyrill},
+year = {2019},
+month = {11},
+pages = {4213-4220},
+title = {RangeNet ++: Fast and Accurate LiDAR Semantic Segmentation},
+doi = {10.1109/IROS40897.2019.8967762}
+}
+
+@ARTICLE{rs_aug_2023,
+  author={An, Pei and Liang, Junxiong and Ma, Jie and Chen, Yanfei and Wang, Liheng and Yang, You and Liu, Qiong},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={RS-Aug: Improve 3D Object Detection on LiDAR With Realistic Simulator Based Data Augmentation}, 
+  year={2023},
+  volume={24},
+  number={9},
+  pages={10165-10176},
+  keywords={Three-dimensional displays;Laser radar;Point cloud compression;Training;Object detection;Rendering (computer graphics);Detectors;Light detection and ranging;data augmentation;semantic segmentation;3D object detection;autonomous driving},
+  doi={10.1109/TITS.2023.3266727}}
+
+
+@article{pointcutmix_2021,
+  author       = {Jinlai Zhang and
+                  Lyujie Chen and
+                  Bo Ouyang and
+                  Binbin Liu and
+                  Jihong Zhu and
+                  Yujing Chen and
+                  Yanmei Meng and
+                  Danfeng Wu},
+  title        = {PointCutMix: Regularization Strategy for Point Cloud Classification},
+  journal      = {CoRR},
+  volume       = {abs/2101.01461},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2101.01461},
+  eprinttype    = {arXiv},
+  eprint       = {2101.01461},
+  timestamp    = {Sat, 13 May 2023 00:49:48 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2101-01461.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@INPROCEEDINGS{patch_aug_2021,
+  author={Sheshappanavar, Shivanand Venkanna and Singh, Vinit Veerendraveer and Kambhamettu, Chandra},
+  booktitle={2021 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)}, 
+  title={PatchAugment: Local Neighborhood Augmentation in Point Cloud Classification}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={2118-2127},
+  keywords={Geometry;Deep learning;Solid modeling;Three-dimensional displays;Computational modeling;Benchmark testing;Jitter},
+  doi={10.1109/ICCVW54120.2021.00240}}
+
+
+@inproceedings{mao2021one,
+title={One Million Scenes for Autonomous Driving: ONCE Dataset},
+author={Mao, Jiageng and Niu, Minzhe and Jiang, Chenhan and Liang, Xiaodan and Li, Yamin and Ye, Chaoqiang and Zhang, Wei and Li, Zhenguo and Yu, Jie and Xu, Chunjing and others}, 
+journal={arXiv preprint arXiv:2106.11037}, 
+year={2021}
+}
+
+@INPROCEEDINGS{dada_2023,
+  author={Lee, Joohyun and Lee, Jin-Hee and Lee, Jae-Keun and Kim, Je-Seok and Kwon, Soon and Kim, Sangdong},
+  booktitle={2023 14th International Conference on Information and Communication Technology Convergence (ICTC)}, 
+  title={Dual Adaptive Data Augmentation for 3D Object Detection}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1732-1737},
+  keywords={Deep learning;Training;Solid modeling;Adaptation models;Three-dimensional displays;Object detection;Data augmentation;3D Object Detection;Data Augmentation;Li-DAR},
+  doi={10.1109/ICTC58733.2023.10393861}}
+
+
+@article{ppba_2020,
+  author       = {Shuyang Cheng and
+                  Zhaoqi Leng and
+                  Ekin Dogus Cubuk and
+                  Barret Zoph and
+                  Chunyan Bai and
+                  Jiquan Ngiam and
+                  Yang Song and
+                  Benjamin Caine and
+                  Vijay Vasudevan and
+                  Congcong Li and
+                  Quoc V. Le and
+                  Jonathon Shlens and
+                  Dragomir Anguelov},
+  title        = {Improving 3D Object Detection through Progressive Population Based
+                  Augmentation},
+  journal      = {CoRR},
+  volume       = {abs/2004.00831},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2004.00831},
+  eprinttype    = {arXiv},
+  eprint       = {2004.00831},
+  timestamp    = {Wed, 08 Apr 2020 17:08:25 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2004-00831.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{sessd_2021,
+  author       = {Wu Zheng and
+                  Weiliang Tang and
+                  Li Jiang and
+                  Chi{-}Wing Fu},
+  title        = {{SE-SSD:} Self-Ensembling Single-Stage Object Detector From Point
+                  Cloud},
+  journal      = {CoRR},
+  volume       = {abs/2104.09804},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2104.09804},
+  eprinttype    = {arXiv},
+  eprint       = {2104.09804},
+  timestamp    = {Mon, 22 Jan 2024 12:10:32 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2104-09804.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{patched_up_2018,
+  author       = {Yifan Wang and
+                  Shihao Wu and
+                  Hui Huang and
+                  Daniel Cohen{-}Or and
+                  Olga Sorkine{-}Hornung},
+  title        = {Patch-based Progressive 3D Point Set Upsampling},
+  journal      = {CoRR},
+  volume       = {abs/1811.11286},
+  year         = {2018},
+  url          = {http://arxiv.org/abs/1811.11286},
+  eprinttype    = {arXiv},
+  eprint       = {1811.11286},
+  timestamp    = {Thu, 30 Nov 2023 16:40:31 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1811-11286.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@misc{snow_sim_2022,
+      title={LiDAR Snowfall Simulation for Robust 3D Object Detection}, 
+      author={Martin Hahner and Christos Sakaridis and Mario Bijelic and Felix Heide and Fisher Yu and Dengxin Dai and Luc Van Gool},
+      year={2022},
+      eprint={2203.15118},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+
+@article{fog_sim_2021,
+  author       = {Martin Hahner and
+                  Christos Sakaridis and
+                  Dengxin Dai and
+                  Luc Van Gool},
+  title        = {Fog Simulation on Real LiDAR Point Clouds for 3D Object Detection
+                  in Adverse Weather},
+  journal      = {CoRR},
+  volume       = {abs/2108.05249},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2108.05249},
+  eprinttype    = {arXiv},
+  eprint       = {2108.05249},
+  timestamp    = {Wed, 18 Aug 2021 19:45:42 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2108-05249.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{pa_aug2020,
+  author       = {Jaeseok Choi and
+                  Yeji Song and
+                  Nojun Kwak},
+  title        = {Part-Aware Data Augmentation for 3D Object Detection in Point Cloud},
+  journal      = {CoRR},
+  volume       = {abs/2007.13373},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2007.13373},
+  eprinttype    = {arXiv},
+  eprint       = {2007.13373},
+  timestamp    = {Wed, 29 Jul 2020 15:36:39 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2007-13373.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@InProceedings{pointaugmenting2021,
+    author    = {Wang, Chunwei and Ma, Chao and Zhu, Ming and Yang, Xiaokang},
+    title     = {PointAugmenting: Cross-Modal Augmentation for 3D Object Detection},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2021},
+    pages     = {11794-11803}
+}
+
+
+@article{pointpainting2019,
+  author       = {Sourabh Vora and
+                  Alex H. Lang and
+                  Bassam Helou and
+                  Oscar Beijbom},
+  title        = {PointPainting: Sequential Fusion for 3D Object Detection},
+  journal      = {CoRR},
+  volume       = {abs/1911.10150},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1911.10150},
+  eprinttype    = {arXiv},
+  eprint       = {1911.10150},
+  timestamp    = {Tue, 03 Dec 2019 14:15:54 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1911-10150.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{pointaugment2020,
+  author       = {Ruihui Li and
+                  Xianzhi Li and
+                  Pheng{-}Ann Heng and
+                  Chi{-}Wing Fu},
+  title        = {PointAugment: an Auto-Augmentation Framework for Point Cloud Classification},
+  journal      = {CoRR},
+  volume       = {abs/2002.10876},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2002.10876},
+  eprinttype    = {arXiv},
+  eprint       = {2002.10876},
+  timestamp    = {Tue, 03 Mar 2020 14:32:13 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2002-10876.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{pointmixup2020,
+  author       = {Yunlu Chen and
+                  Vincent Tao Hu and
+                  Efstratios Gavves and
+                  Thomas Mensink and
+                  Pascal Mettes and
+                  Pengwan Yang and
+                  Cees G. M. Snoek},
+  title        = {PointMixup: Augmentation for Point Clouds},
+  journal      = {CoRR},
+  volume       = {abs/2008.06374},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2008.06374},
+  eprinttype    = {arXiv},
+  eprint       = {2008.06374},
+  timestamp    = {Thu, 14 Oct 2021 09:14:19 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2008-06374.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+@article{lidarsim2020,
+  author       = {Sivabalan Manivasagam and
+                  Shenlong Wang and
+                  Kelvin Wong and
+                  Wenyuan Zeng and
+                  Mikita Sazanovich and
+                  Shuhan Tan and
+                  Bin Yang and
+                  Wei{-}Chiu Ma and
+                  Raquel Urtasun},
+  title        = {LiDARsim: Realistic LiDAR Simulation by Leveraging the Real World},
+  journal      = {CoRR},
+  volume       = {abs/2006.09348},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2006.09348},
+  eprinttype    = {arXiv},
+  eprint       = {2006.09348},
+  timestamp    = {Wed, 25 Nov 2020 18:20:16 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2006-09348.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{pointnetplus2017,
+  author       = {Charles Ruizhongtai Qi and
+                  Li Yi and
+                  Hao Su and
+                  Leonidas J. Guibas},
+  title        = {PointNet++: Deep Hierarchical Feature Learning on Point Sets in a
+                  Metric Space},
+  journal      = {CoRR},
+  volume       = {abs/1706.02413},
+  year         = {2017},
+  url          = {http://arxiv.org/abs/1706.02413},
+  eprinttype    = {arXiv},
+  eprint       = {1706.02413},
+  timestamp    = {Wed, 11 Nov 2020 08:48:08 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/QiYSG17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@ARTICLE{aug_lidar_sim_2020,
+  author={Fang, Jin and Zhou, Dingfu and Yan, Feilong and Zhao, Tongtong and Zhang, Feihu and Ma, Yu and Wang, Liang and Yang, Ruigang},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Augmented LiDAR Simulator for Autonomous Driving}, 
+  year={2020},
+  volume={5},
+  number={2},
+  pages={1931-1938},
+  keywords={Three-dimensional displays;Laser radar;Solid modeling;Autonomous vehicles;Data models;Semantics;Task analysis;Simulation and animation;computer vision for automation;object detection;segmentation and categorization},
+  doi={10.1109/LRA.2020.2969927}}
+
+
+
+@article{mix3d2021,
+  author       = {Alexey Nekrasov and
+                  Jonas Schult and
+                  Or Litany and
+                  Bastian Leibe and
+                  Francis Engelmann},
+  title        = {Mix3D: Out-of-Context Data Augmentation for 3D Scenes},
+  journal      = {CoRR},
+  volume       = {abs/2110.02210},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2110.02210},
+  eprinttype    = {arXiv},
+  eprint       = {2110.02210},
+  timestamp    = {Wed, 16 Aug 2023 09:11:18 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2110-02210.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@Article{second2018,
+AUTHOR = {Yan, Yan and Mao, Yuxing and Li, Bo},
+TITLE = {SECOND: Sparsely Embedded Convolutional Detection},
+JOURNAL = {Sensors},
+VOLUME = {18},
+YEAR = {2018},
+NUMBER = {10},
+ARTICLE-NUMBER = {3337},
+URL = {https://www.mdpi.com/1424-8220/18/10/3337},
+PubMedID = {30301196},
+ISSN = {1424-8220},
+ABSTRACT = {LiDAR-based or RGB-D-based object detection is used in numerous applications, ranging from autonomous driving to robot vision. Voxel-based 3D convolutional networks have been used for some time to enhance the retention of information when processing point cloud LiDAR data. However, problems remain, including a slow inference speed and low orientation estimation performance. We therefore investigate an improved sparse convolution method for such networks, which significantly increases the speed of both training and inference. We also introduce a new form of angle loss regression to improve the orientation estimation performance and a new data augmentation approach that can enhance the convergence speed and performance. The proposed network produces state-of-the-art results on the KITTI 3D object detection benchmarks while maintaining a fast inference speed.},
+DOI = {10.3390/s18103337}
+}
+
+
+
+
+
+@article{DBLP:journals/corr/abs-2004-01643,
+  author       = {Martin Hahner and
+                  Dengxin Dai and
+                  Alexander Liniger and
+                  Luc Van Gool},
+  title        = {Quantifying Data Augmentation for LiDAR based 3D Object Detection},
+  journal      = {CoRR},
+  volume       = {abs/2004.01643},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2004.01643},
+  eprinttype    = {arXiv},
+  eprint       = {2004.01643},
+  timestamp    = {Wed, 08 Apr 2020 17:08:25 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2004-01643.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{cutmix,
+  author       = {Sangdoo Yun and
+                  Dongyoon Han and
+                  Seong Joon Oh and
+                  Sanghyuk Chun and
+                  Junsuk Choe and
+                  Youngjoon Yoo},
+  title        = {CutMix: Regularization Strategy to Train Strong Classifiers with Localizable
+                  Features},
+  journal      = {CoRR},
+  volume       = {abs/1905.04899},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1905.04899},
+  eprinttype    = {arXiv},
+  eprint       = {1905.04899},
+  timestamp    = {Tue, 28 May 2019 12:48:08 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1905-04899.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+
+@article{mixup,
+  author       = {Hongyi Zhang and
+                  Moustapha Ciss{\'{e}} and
+                  Yann N. Dauphin and
+                  David Lopez{-}Paz},
+  title        = {mixup: Beyond Empirical Risk Minimization},
+  journal      = {CoRR},
+  volume       = {abs/1710.09412},
+  year         = {2017},
+  url          = {http://arxiv.org/abs/1710.09412},
+  eprinttype    = {arXiv},
+  eprint       = {1710.09412},
+  timestamp    = {Mon, 13 Aug 2018 16:47:14 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1710-09412.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+@article{cutout,
+  author       = {Terrance Devries and
+                  Graham W. Taylor},
+  title        = {Improved Regularization of Convolutional Neural Networks with Cutout},
+  journal      = {CoRR},
+  volume       = {abs/1708.04552},
+  year         = {2017},
+  url          = {http://arxiv.org/abs/1708.04552},
+  eprinttype    = {arXiv},
+  eprint       = {1708.04552},
+  timestamp    = {Mon, 13 Aug 2018 16:45:57 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1708-04552.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+@article{abs-1708-01566,
+  author       = {Hassan Abu Alhaija and
+                  Siva Karthik Mustikovela and
+                  Lars M. Mescheder and
+                  Andreas Geiger and
+                  Carsten Rother},
+  title        = {Augmented Reality Meets Computer Vision : Efficient Data Generation
+                  for Urban Driving Scenes},
+  journal      = {CoRR},
+  volume       = {abs/1708.01566},
+  year         = {2017},
+  url          = {http://arxiv.org/abs/1708.01566},
+  eprinttype    = {arXiv},
+  eprint       = {1708.01566},
+  timestamp    = {Fri, 20 Nov 2020 13:22:20 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1708-01566.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@inproceedings{NIPS2000_ba9a56ce,
+ author = {Chapelle, Olivier and Weston, Jason and Bottou, L\'{e}on and Vapnik, Vladimir},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {T. Leen and T. Dietterich and V. Tresp},
+ pages = {},
+ publisher = {MIT Press},
+ title = {Vicinal Risk Minimization},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2000/file/ba9a56ce0a9bfa26e8ed9e10b2cc8f46-Paper.pdf},
+ volume = {13},
+ year = {2000}
+}
+
+@article{transfsim2000,
+author = {Simard, Patrice and Lecun, Yann and Denker, John},
+year = {2000},
+month = {05},
+pages = {},
+title = {Transformation Invariance in Pattern Recognition - Tangent Distance and Tangent Propagation}
+}
+
+@misc{xiao2022polarmix,
+      title={PolarMix: A General Data Augmentation Technique for LiDAR Point Clouds}, 
+      author={Aoran Xiao and Jiaxing Huang and Dayan Guan and Kaiwen Cui and Shijian Lu and Ling Shao},
+      year={2022},
+      eprint={2208.00223},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+
+@INPROCEEDINGS{8575306,
+  author={Best, Andrew and Narang, Sahil and Pasqualin, Lucas and Barber, Daniel and Manocha, Dinesh},
+  booktitle={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, 
+  title={AutonoVi-Sim: Autonomous Vehicle Simulation Platform with Weather, Sensing, and Traffic Control}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={1161-11618},
+  keywords={Roads;Autonomous vehicles;Meteorology;Testing;Computational modeling;Data models},
+  doi={10.1109/CVPRW.2018.00152}}
+
+
+
+@article{abs-1804-00103,
+  author       = {Xiangyu Yue and
+                  Bichen Wu and
+                  Sanjit A. Seshia and
+                  Kurt Keutzer and
+                  Alberto L. Sangiovanni{-}Vincentelli},
+  title        = {A LiDAR Point Cloud Generator: from a Virtual World to Autonomous
+                  Driving},
+  journal      = {CoRR},
+  volume       = {abs/1804.00103},
+  year         = {2018},
+  url          = {http://arxiv.org/abs/1804.00103},
+  eprinttype    = {arXiv},
+  eprint       = {1804.00103},
+  timestamp    = {Mon, 13 Aug 2018 16:49:02 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1804-00103.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{abs-1809-08495,
+  author       = {Bichen Wu and
+                  Xuanyu Zhou and
+                  Sicheng Zhao and
+                  Xiangyu Yue and
+                  Kurt Keutzer},
+  title        = {SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation
+                  for Road-Object Segmentation from a LiDAR Point Cloud},
+  journal      = {CoRR},
+  volume       = {abs/1809.08495},
+  year         = {2018},
+  url          = {http://arxiv.org/abs/1809.08495},
+  eprinttype    = {arXiv},
+  eprint       = {1809.08495},
+  timestamp    = {Fri, 05 Oct 2018 11:34:52 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1809-08495.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@INPROCEEDINGS{8462926,
+  author={Wu, Bichen and Wan, Alvin and Yue, Xiangyu and Keutzer, Kurt},
+  booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={SqueezeSeg: Convolutional Neural Nets with Recurrent CRF for Real-Time Road-Object Segmentation from 3D LiDAR Point Cloud}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={1887-1893},
+  keywords={Three-dimensional displays;Laser radar;Computational modeling;Pipelines;Autonomous vehicles;Semantics;Clustering algorithms},
+  doi={10.1109/ICRA.2018.8462926}}
+
+
+
+@article{SuQLG15,
+  author       = {Hao Su and
+                  Charles Ruizhongtai Qi and
+                  Yangyan Li and
+                  Leonidas J. Guibas},
+  title        = {Render for {CNN:} Viewpoint Estimation in Images Using CNNs Trained
+                  with Rendered 3D Model Views},
+  journal      = {CoRR},
+  volume       = {abs/1505.05641},
+  year         = {2015},
+  url          = {http://arxiv.org/abs/1505.05641},
+  eprinttype    = {arXiv},
+  eprint       = {1505.05641},
+  timestamp    = {Wed, 11 Nov 2020 08:48:06 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/SuQLG15.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+ @misc{ 3d_kd_tree,
+   author = "Wikimedia Commons",
+   title = "File:3dtree.png --- Wikimedia Commons{,} the free media repository",
+   year = "2023",
+   url = "https://commons.wikimedia.org/w/index.php?title=File:3dtree.png&oldid=767952807",
+   note = "[Online; accessed 27-February-2024]"
+ }
+
 
 @online{nmvccs,
     author = {U.S. Department of Transport},
