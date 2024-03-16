@@ -47,8 +47,10 @@
 \newrefformat{lst}{Lst.~\ref{#1}}
 %\usepackage[doi=false,url=false,isbn=false, backend=bibtex8,citestyle=alphabetic,bibstyle=alphabetic,hyperref, sorting=none]{biblatex}
 % \usepackage[backend=bibtex8, citestyle=numeric, bibstyle=numeric, hyperref, sorting=none]{biblatex}
-\usepackage[bibstyle=numeric, citestyle=authoryear,backend=biber, sorting=nyt]{biblatex}
+\usepackage[bibstyle=numeric, citestyle=authoryear,backend=biber, sorting=nyt, maxcitenames=2, mincitenames=1]{biblatex}
 \renewcommand{\bibfont}{\small}
+
+\input{98_bibliography/custombib}
 
 %%% Von Johannes ergänzt
 \usepackage{listings}

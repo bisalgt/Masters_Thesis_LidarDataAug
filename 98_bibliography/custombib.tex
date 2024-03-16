@@ -1,0 +1,34 @@
+
+
+% Add comma between author and year in parentheses
+% Add comma between author and year in parentheses
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+% Ensure that punctuation remains consistent in all contexts
+\DeclarePunctuationPairs{comma}{*}
+
+% Make citation text clickable
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\savebibmacro{cite}
+\renewbibmacro{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\savebibmacro{textcite}
+\renewbibmacro{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
